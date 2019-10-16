@@ -21,5 +21,6 @@ from student.views import IndexView
 
 urlpatterns = [
     url(r'^$', IndexView.as_view(), name='index'),
-    path(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
+    # path(r'^admin/', admin.site.urls),
 ]
